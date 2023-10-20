@@ -1,0 +1,8 @@
+resources:
+  - srcs/nginx/srcs/nginx.yaml
+  - srcs/wordpress/srcs/wordpress.yaml
+  - srcs/phpmyadmin/srcs/phpmyadmin.yaml
+  - srcs/metallb/srcs/metallb.yaml
+  - srcs/mysql/srcs/mysql.yaml
+  - srcs/ftps/srcs/ftps.yaml
+  - srcs/influxdb/srcs/influxdb.yaml
