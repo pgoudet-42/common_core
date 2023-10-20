@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>pilou - ft_server</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400italic,700italic' rel='stylesheet'
+    type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Playfair+Display:400italic,700italic'>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    html {
+      font-size: 62.5%;
+    }
+
+    body {
+      font-size: 1.4rem;
+    }
+
+    /* =14px */
+    h1 {
+      font-size: 2.4rem;
+    }
+
+    #links {
+      display: grid;
+      grid-template-columns: 118px 100px 100px;
+      margin-left: 34%;
+      margin-top: 20px;
+    }
+
+    /* =24px */
+    .container__item {
+      margin: 0 auto 40px;
+    }
+
+    .landing-page-container {
+      width: 100%;
+      min-height: 100%;
+      height: 90rem;
+      background-image: url("https://s29.postimg.org/vho8xb2pj/landing_bg.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom;
+      overflow: hidden;
+      font-family: 'Montserrat', sans-serif;
+      color: #09383E;
+    }
+
+    .content__wrapper {
+      max-width: 1200px;
+      width: 90%;
+      height: 100%;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .header {
+      width: 100%;
+      height: 2rem;
+      padding: 4.5rem 0;
+      display: block;
+    }
+
+    .menu-icon {
+      width: 2.5rem;
+      height: 1.5rem;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .header__item {
+      display: inline-block;
+      float: left;
+    }
+
+    .menu-icon__line {
+      width: 1.5rem;
+      height: 0.2rem;
+      background-color: #0C383E;
+      display: block;
+    }
+
+    .menu-icon__line:before,
+    .menu-icon__line:after {
+      content: '';
+      width: 1.5rem;
+      height: 0.2rem;
+      background-color: #0C383E;
+      display: inline-block;
+      position: relative;
+    }
+
+    .menu-icon__line:before {
+      left: 0.5rem;
+      top: -0.6rem;
+    }
+
+    .menu-icon__line:after {
+      top: -1.8rem;
+    }
+
+    .heading {
+      width: 90%;
+      font-size: 2rem;
+      font-weight: bold;
+      margin: 0;
+      line-height: 1.7rem;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .social-container {
+      width: 7.25rem;
+      list-style: none;
+      overflow: hidden;
+      padding: 0;
+      margin: 0;
+      float: right;
+    }
+
+    .social-container .social__icon {
+      float: left;
+      cursor: pointer;
+    }
+
+    .social-container .social__icon.social__icon--dr {
+      margin-left: 0.5rem;
+    }
+
+    .social-container .social__icon.social__icon--dr img {
+      height: 2rem;
+    }
+
+    .social-container .social__icon.social__icon--in {
+      margin-left: 0.75rem;
+    }
+
+    .social-container .social__icon.social__icon--in img {
+      height: 2rem;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <html>
+
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="container__item landing-page-container">
+        <div class="content__wrapper">
+
+          <header class="header">
+            <div class="menu-icon header__item">
+              <span class="menu-icon__line"></span>
+            </div>
+            <ul class="social-container header__item">
+                  <img src="https://image.flaticon.com/icons/svg/2111/2111425.svg" alt="github">
+                </a>
+            </ul>
+          </header>
+
+          <p class="coords">N 48° 53' 47.426" / W 2° 19' 10.229"</p>
+
+          <div class="ellipses-container">
+
+            <h2 class="greeting">ft_server</h2>
+
+            <div class="ellipses ellipses__outer--thin">
+
+              <div class="ellipses ellipses__orbit"></div>
+
+            </div>
+
+            <div class="ellipses ellipses__outer--thick"></div>
+          </div>
+
+          <div class="scroller">
+            <p class="page-title">home</p>
+
+            <div class="timeline">
+              <span class="timeline__unit"></span>
+              <span class="timeline__unit timeline__unit--active"></span>
+              <span class="timeline__unit"></span>
+            </div>
+          </div>
+          <div id="links">
+            <div>
+              <a href="https://localhost/phpmyadmin" target='_blank'>
+                <button class="btn btn-default">PhpmyAdmin</button>
+              </a>
+            </div>
+            <div>
+              <a href="https://localhost/wordpress" target='_blank'>
+                <button class="btn btn-default">Wordpress</button>
+              </a>
+            </div>
+            <div>
+              <a href="https://localhost/index.php" target='_blank'>
+                <button class="btn btn-default">Php</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+
+  </html>
+</body>
+
+</html>

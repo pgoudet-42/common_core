@@ -1,0 +1,1 @@
+clang++ -Wall -Wextra -Werror -std=c++98 main2.cpp; ./a.out > t2.txt; clang++ main.cpp; ./a.out > t1.txt; diff t1.txt t2.txt
